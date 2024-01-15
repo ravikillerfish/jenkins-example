@@ -1,0 +1,13 @@
+pipeline{
+        agent any
+        options{
+                skipDefaultCheckout true
+        }
+        stages{
+                stage('testingpullanddeploy'){
+                        steps{
+                                sh 'cat ravi.txt'
+                        }
+                }
+        }
+}
