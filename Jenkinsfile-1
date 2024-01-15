@@ -1,0 +1,10 @@
+pipeline{
+        agent any
+        stages{
+                stage('testingpullanddeploy'){
+                        steps{
+                                sh 'cat ravi.txt'
+                        }
+                }
+        }
+}
