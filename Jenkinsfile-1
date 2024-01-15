@@ -1,5 +1,8 @@
 pipeline{
         agent any
+        options{
+                overrideIndexTriggers(true)
+        }
         stages{
                 stage('testingpullanddeploy'){
                         steps{
